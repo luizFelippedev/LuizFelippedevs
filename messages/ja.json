@@ -1,0 +1,62 @@
+{
+  "Metadata": {
+    "title": "Luiz Felipe - フルスタック開発者",
+    "description": "Next.js、React、Node.js、Three.jsを使用した3Dの専門家、Luiz Felipeのプロジェクトポートフォリオ。",
+    "keywords": "開発者, フルスタック, Next.js, React, 3D, ポートフォリオ, TypeScript, Node.js"
+  },
+  "Navigation": {
+    "home": "ホーム",
+    "about": "私について",
+    "projects": "プロジェクト",
+    "certificates": "認定証",
+    "contact": "お問い合わせ",
+    "openMenu": "メニューを開く"
+  },
+  "Hero": {
+    "greeting": "こんにちは、私は",
+    "subtitle": "フルスタック開発者 & 3D愛好家",
+    "role1": "フルスタック開発者",
+    "role2": "3D体験クリエーター",
+    "role3": "UI/UX愛好家",
+    "role4": "TypeScript愛好家",
+    "availability": "プロジェクト募集中",
+    "ctaPrimary": "私の仕事を見る",
+    "ctaSecondary": "お問い合わせ",
+    "scrollDown": "下にスクロール"
+  },
+  "About": {
+    "title": "私について",
+    "description": "革新的なソリューションとインタラクティブな3Dインターフェースを作成することに情熱を注ぐ開発者です。ソフトウェアエンジニアリングの確固たる基盤とユーザーエクスペリエンスへの鋭い視点を持ち、複雑なアイデアをデジタルの現実に変えることを目指しています。",
+    "journeyTitle": "私の経歴",
+    "techTitle": "私のツールと技術"
+  },
+  "Projects": {
+    "title": "私のプロジェクト",
+    "description": "複雑なウェブアプリケーションからインタラクティブな実験まで、私が開発したプロジェクトの一部をご覧ください。",
+    "filterAll": "すべて",
+    "viewOnlineButton": "オンラインで見る",
+    "viewCodeButton": "コード"
+  },
+  "Contact": {
+    "title": "お問い合わせ",
+    "description": "質問、プロジェクトの提案、または単に挨拶をしたい場合は、お気軽にご連絡ください。",
+    "formNameLabel": "名前",
+    "formNamePlaceholder": "氏名",
+    "formEmailLabel": "メールアドレス",
+    "formEmailPlaceholder": "your.email@example.com",
+    "formMessageLabel": "メッセージ",
+    "formMessagePlaceholder": "ここにメッセージを残してください...",
+    "formSendButton": "メッセージを送信",
+    "formSendingButton": "送信中...",
+    "toastSuccessTitle": "成功しました！",
+    "toastSuccessDescription": "メッセージは正常に送信されました。ご連絡いただきありがとうございます！",
+    "toastErrorTitle": "エラー！",
+    "toastErrorDescription": "メッセージの送信中に問題が発生しました。後でもう一度お試しください。"
+  },
+  "Footer": {
+    "copyright": "© {year} Luiz Felipe. 全著作権所有。",
+    "navigationTitle": "ナビゲーション",
+    "socialTitle": "ソーシャルメディア",
+    "adminLogin": "管理者アクセス"
+  }
+}

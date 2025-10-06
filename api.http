@@ -1,0 +1,108 @@
+# ==========================================
+# VARIÁVEIS GLOBAIS
+# ==========================================
+@host = http://localhost:3000
+@projectId = cole_o_id_de_um_projeto_aqui
+@messageId = cole_o_id_de_uma_mensagem_aqui
+@skillId = cole_o_id_de_uma_habilidade_aqui
+
+
+# ==========================================
+# ===         ROTAS DE PROJETOS          ===
+# ==========================================
+
+### 1. Listar todos os projetos
+# @name getAllProjects
+GET {{host}}/api/admin/projects
+
+
+### 2. Criar um novo projeto
+# @name createProject
+POST {{host}}/api/admin/projects
+Content-Type: application/json
+
+{
+  "title": "Novo Projeto de Teste Completo",
+  "slug": "novo-projeto-de-teste-completo",
+  "description": "Descrição do projeto de teste.",
+  "content": "Conteúdo mais longo e detalhado sobre o novo projeto de teste.",
+  "imageUrl": "https://via.placeholder.com/1280x720",
+  "tags": "Next.js,API,Teste",
+  "published": true
+}
+
+
+### 3. Atualizar um projeto (Exemplo de PUT)
+# @name updateProject
+PUT {{host}}/api/admin/projects/{{projectId}}
+Content-Type: application/json
+
+{
+  "title": "Meu Projeto Atualizado",
+  "slug": "meu-projeto-atualizado",
+  "description": "Descrição atualizada do projeto.",
+  "content": "Conteúdo longo e atualizado do projeto.",
+  "imageUrl": "https://via.placeholder.com/1280x720",
+  "tags": "Next.js,API,Teste,Atualizado",
+  "published": true
+}
+
+
+### 4. Deletar um projeto
+# @name deleteProject
+DELETE {{host}}/api/admin/projects/{{projectId}}
+
+
+# ==========================================
+# ===         ROTAS DE MENSAGENS         ===
+# ==========================================
+
+### 5. Listar todas as mensagens
+# @name getAllMessages
+GET {{host}}/api/admin/messages
+
+
+### 6. Ver uma mensagem (e marcar como lida)
+# @name getMessageById
+GET {{host}}/api/admin/messages/{{messageId}}
+
+
+### 7. Marcar uma mensagem como NÃO lida
+# @name markMessageAsUnread
+PUT {{host}}/api/admin/messages/{{messageId}}
+Content-Type: application/json
+
+{
+  "read": false
+}
+
+
+# ==========================================
+# ===          ROTAS DE SKILLS           ===
+# ==========================================
+
+### 8. Listar todas as habilidades
+# @name getAllSkills
+GET {{host}}/api/admin/skills
+
+
+### 9. Criar uma nova habilidade
+# @name createSkill
+POST {{host}}/api/admin/skills
+Content-Type: application/json
+
+{
+  "name": "GraphQL",
+  "icon": "Database",
+  "mastery": 75,
+  "category": "TOOL"
+}
+
+
+# ==========================================
+# ===        ROTAS DE ANALYTICS          ===
+# ==========================================
+
+### 10. Obter estatísticas de analytics
+# @name getAnalytics
+GET {{host}}/api/admin/analytics

@@ -1,0 +1,139 @@
+// Define o gerador do Prisma Client, que criará o cliente TypeScript para sua aplicação.
+generator client {
+  provider = "prisma-client-js"
+}
+
+// Configura a fonte de dados. Estamos usando SQLite para simplicidade no desenvolvimento local.
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL") // Busca a URL do banco do arquivo .env (ex: "file:./prisma/dev.db")
+}
+
+// ==========================================
+// ===         MODELS DA APLICAÇÃO        ===
+// ==========================================
+
+model Project {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  title       String
+  description String   // No SQLite, o tipo String já armazena textos longos.
+  content     String   // O atributo @db.Text foi removido por ser incompatível.
+  imageUrl    String
+  deployUrl   String?
+  repoUrl     String?
+  published   Boolean  @default(false)
+
+  // No SQLite, arrays são armazenados como uma única String.
+  // A lógica da aplicação deve lidar com a conversão (ex: "tag1,tag2,tag3").
+  tags        String
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([createdAt]) // Adiciona um índice para otimizar a ordenação por data
+}
+
+model Skill {
+  id       String @id @default(cuid())
+  name     String @unique
+  icon     String // Nome do ícone (ex: 'React' do lucide-react)
+  mastery  Int    @default(80) // Nível de 0 a 100
+
+  // Como SQLite não suporta enums, usamos uma String para a categoria.
+  // Valores permitidos: "LANGUAGE", "FRAMEWORK", "DATABASE", "TOOL"
+  category String
+}
+
+model Certificate {
+  id            String   @id @default(cuid())
+  title         String
+  issuer        String
+  issueDate     DateTime
+  credentialId  String?
+  credentialUrl String?
+  imageUrl      String
+
+  // Armazena as habilidades relacionadas como uma única String (ex: "React,Node.js")
+  skills        String
+}
+
+model Message {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  message   String
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@index([createdAt]) // Adiciona um índice para otimizar a ordenação por data
+}
+
+// ==========================================
+// ===   MODEL DE CONFIGURAÇÕES DO SITE   ===
+// ==========================================
+
+model SiteSettings {
+  id           String   @id @default("main")
+  siteName     String?
+  description  String?  // Descrição para SEO
+  contactEmail String?  // Email público de contato
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@map("site_settings")
+}
+
+// ==========================================
+// ===     MODELS DE AUTENTICAÇÃO (Auth.js) ===
+// ==========================================
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime?
+  image         String?
+  password      String?   // Usado para o login com credenciais (email/senha)
+
+  // Campo para controle de permissão (ex: "ADMIN" ou "USER")
+  role          String    @default("ADMIN")
+
+  accounts      Account[]
+  sessions      Session[]
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}

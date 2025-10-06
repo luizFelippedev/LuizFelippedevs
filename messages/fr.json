@@ -1,0 +1,62 @@
+{
+  "Metadata": {
+    "title": "Luiz Felipe - Développeur Full Stack",
+    "description": "Portfolio de projets de Luiz Felipe, spécialiste en Next.js, React, Node.js et 3D avec Three.js.",
+    "keywords": "Développeur, Full Stack, Next.js, React, 3D, Portfolio, TypeScript, Node.js"
+  },
+  "Navigation": {
+    "home": "Accueil",
+    "about": "À Propos de Moi",
+    "projects": "Projets",
+    "certificates": "Certificats",
+    "contact": "Contact",
+    "openMenu": "Ouvrir le menu"
+  },
+  "Hero": {
+    "greeting": "Bonjour, je suis",
+    "subtitle": "Développeur Full Stack & Passionné de 3D",
+    "role1": "Développeur Full Stack",
+    "role2": "Créateur d'Expériences 3D",
+    "role3": "Passionné d'UI/UX",
+    "role4": "Amoureux de TypeScript",
+    "availability": "Disponible pour des projets",
+    "ctaPrimary": "Découvrez mon travail",
+    "ctaSecondary": "Prendre contact",
+    "scrollDown": "Faire défiler vers le bas"
+  },
+  "About": {
+    "title": "À Propos de Moi",
+    "description": "Je suis un développeur passionné par la création de solutions innovantes et d'interfaces 3D interactives. Avec une base solide en génie logiciel et un œil attentif à l'expérience utilisateur, je cherche à transformer des idées complexes en réalité numérique.",
+    "journeyTitle": "Mon Parcours",
+    "techTitle": "Mes Outils et Technologies"
+  },
+  "Projects": {
+    "title": "Mes Projets",
+    "description": "Découvrez quelques-uns des projets que j'ai développés, des applications web complexes aux expériences interactives.",
+    "filterAll": "Tous",
+    "viewOnlineButton": "Voir en Ligne",
+    "viewCodeButton": "Code"
+  },
+  "Contact": {
+    "title": "Prendre Contact",
+    "description": "Vous avez une question, une proposition de projet ou vous voulez simplement dire bonjour ? Je serais ravi de vous lire.",
+    "formNameLabel": "Nom",
+    "formNamePlaceholder": "Votre nom complet",
+    "formEmailLabel": "E-mail",
+    "formEmailPlaceholder": "votre.email@exemple.com",
+    "formMessageLabel": "Message",
+    "formMessagePlaceholder": "Laissez votre message ici...",
+    "formSendButton": "Envoyer le Message",
+    "formSendingButton": "Envoi en cours...",
+    "toastSuccessTitle": "Succès !",
+    "toastSuccessDescription": "Votre message a été envoyé. Merci de nous avoir contactés !",
+    "toastErrorTitle": "Erreur !",
+    "toastErrorDescription": "Un problème est survenu lors de l'envoi de votre message. Veuillez réessayer plus tard."
+  },
+  "Footer": {
+    "copyright": "© {year} Luiz Felipe. Tous droits réservés.",
+    "navigationTitle": "Navigation",
+    "socialTitle": "Réseaux Sociaux",
+    "adminLogin": "Accès Restreint"
+  }
+}

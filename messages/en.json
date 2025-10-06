@@ -1,0 +1,62 @@
+{
+  "Metadata": {
+    "title": "Luiz Felipe - Full Stack Developer",
+    "description": "Project portfolio of Luiz Felipe, a specialist in Next.js, React, Node.js, and 3D with Three.js.",
+    "keywords": "Developer, Full Stack, Next.js, React, 3D, Portfolio, TypeScript, Node.js"
+  },
+  "Navigation": {
+    "home": "Home",
+    "about": "About Me",
+    "projects": "Projects",
+    "certificates": "Certificates",
+    "contact": "Contact",
+    "openMenu": "Open menu"
+  },
+  "Hero": {
+    "greeting": "Hello, I'm",
+    "subtitle": "Full Stack Developer & 3D Enthusiast",
+    "role1": "Full Stack Developer",
+    "role2": "3D Experience Creator",
+    "role3": "UI/UX Enthusiast",
+    "role4": "TypeScript Lover",
+    "availability": "Available for projects",
+    "ctaPrimary": "Discover my work",
+    "ctaSecondary": "Get in touch",
+    "scrollDown": "Scroll down"
+  },
+  "About": {
+    "title": "About Me",
+    "description": "I am a developer passionate about creating innovative solutions and interactive 3D interfaces. With a solid foundation in software engineering and a keen eye for user experience, I strive to turn complex ideas into digital reality.",
+    "journeyTitle": "My Journey",
+    "techTitle": "My Tools and Technologies"
+  },
+  "Projects": {
+    "title": "My Projects",
+    "description": "Explore some of the projects I have developed, from complex web applications to interactive experiments.",
+    "filterAll": "All",
+    "viewOnlineButton": "View Online",
+    "viewCodeButton": "Code"
+  },
+  "Contact": {
+    "title": "Get in Touch",
+    "description": "Have a question, a project proposal, or just want to say hi? I'd be happy to hear from you.",
+    "formNameLabel": "Name",
+    "formNamePlaceholder": "Your full name",
+    "formEmailLabel": "Email",
+    "formEmailPlaceholder": "your.email@example.com",
+    "formMessageLabel": "Message",
+    "formMessagePlaceholder": "Leave your message here...",
+    "formSendButton": "Send Message",
+    "formSendingButton": "Sending...",
+    "toastSuccessTitle": "Success!",
+    "toastSuccessDescription": "Your message has been sent. Thank you for getting in touch!",
+    "toastErrorTitle": "Error!",
+    "toastErrorDescription": "There was a problem sending your message. Please try again later."
+  },
+  "Footer": {
+    "copyright": "© {year} Luiz Felipe. All rights reserved.",
+    "navigationTitle": "Navigation",
+    "socialTitle": "Social Media",
+    "adminLogin": "Admin Access"
+  }
+}

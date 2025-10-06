@@ -1,0 +1,62 @@
+{
+  "Metadata": {
+    "title": "Luiz Felipe - Desenvolvedor Full Stack",
+    "description": "Portfólio de projetos de Luiz Felipe, especialista em Next.js, React, Node.js e 3D com Three.js.",
+    "keywords": "Desenvolvedor, Full Stack, Next.js, React, 3D, Portfólio, TypeScript, Node.js"
+  },
+  "Navigation": {
+    "home": "Início",
+    "about": "Sobre Mim",
+    "projects": "Projetos",
+    "certificates": "Certificados",
+    "contact": "Contato",
+    "openMenu": "Abrir menu"
+  },
+  "Hero": {
+    "greeting": "Olá, eu sou",
+    "subtitle": "Desenvolvedor Full Stack & Entusiasta 3D",
+    "role1": "Desenvolvedor Full Stack",
+    "role2": "Criador de Experiências 3D",
+    "role3": "Entusiasta de UI/UX",
+    "role4": "Apaixonado por TypeScript",
+    "availability": "Disponível para projetos",
+    "ctaPrimary": "Conheça meu trabalho",
+    "ctaSecondary": "Entre em contato",
+    "scrollDown": "Rolar para baixo"
+  },
+  "About": {
+    "title": "Sobre Mim",
+    "description": "Sou um desenvolvedor apaixonado por criar soluções inovadoras e interfaces 3D interativas. Com uma base sólida em engenharia de software e um olhar atento para a experiência do usuário, busco transformar ideias complexas em realidade digital.",
+    "journeyTitle": "Minha Jornada",
+    "techTitle": "Minhas Ferramentas e Tecnologias"
+  },
+  "Projects": {
+    "title": "Meus Projetos",
+    "description": "Explore alguns dos projetos que desenvolvi, desde aplicações web complexas até experimentos interativos.",
+    "filterAll": "Todos",
+    "viewOnlineButton": "Ver Online",
+    "viewCodeButton": "Código"
+  },
+  "Contact": {
+    "title": "Entre em Contato",
+    "description": "Tem uma pergunta, uma proposta de projeto ou apenas quer dizer oi? Ficarei feliz em ouvir de você.",
+    "formNameLabel": "Nome",
+    "formNamePlaceholder": "Seu nome completo",
+    "formEmailLabel": "E-mail",
+    "formEmailPlaceholder": "seu.email@exemplo.com",
+    "formMessageLabel": "Mensagem",
+    "formMessagePlaceholder": "Deixe sua mensagem aqui...",
+    "formSendButton": "Enviar Mensagem",
+    "formSendingButton": "Enviando...",
+    "toastSuccessTitle": "Sucesso!",
+    "toastSuccessDescription": "Sua mensagem foi enviada. Obrigado por entrar em contato!",
+    "toastErrorTitle": "Erro!",
+    "toastErrorDescription": "Ocorreu um problema ao enviar sua mensagem. Tente novamente mais tarde."
+  },
+  "Footer": {
+    "copyright": "© {year} Luiz Felipe. Todos os direitos reservados.",
+    "navigationTitle": "Navegação",
+    "socialTitle": "Redes Sociais",
+    "adminLogin": "Acesso Restrito"
+  }
+}
